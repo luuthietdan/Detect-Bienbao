@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".History">
+    <ListView
+        android:id="@+id/lvHistory"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/linear">
+
+    </ListView>
+    <LinearLayout
+        android:id="@+id/linear"
+        android:background="@color/linear"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true">
+        <ImageView
+            android:id="@+id/imgHistory"
+            android:src="@drawable/history"
+            android:layout_width="95dp"
+            android:layout_height="50dp"
+            android:background="@drawable/ripple"
+            android:paddingTop="5dp"/>
+
+        <ImageView
+            android:id="@+id/imgSearch"
+            android:layout_width="92dp"
+            android:layout_height="50dp"
+            android:paddingTop="5dp"
+            android:background="@drawable/ripple"
+            android:src="@drawable/search" />
+        <ImageView
+            android:id="@+id/imgData"
+            android:layout_width="92dp"
+            android:layout_height="50dp"
+            android:paddingTop="5dp"
+            android:background="@drawable/ripple"
+            android:src="@drawable/langua" />
+
+        <ImageView
+            android:id="@+id/imgSetting"
+            android:layout_width="92dp"
+            android:layout_height="50dp"
+            android:paddingTop="5dp"
+            android:background="@drawable/ripple"
+            android:src="@drawable/setting" />
+
+    </LinearLayout>
+</RelativeLayout>
